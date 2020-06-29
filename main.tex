@@ -3,7 +3,6 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{textcomp}
 \usepackage{tikz}
 \usepackage{subfiles}
 \usepackage{tcolorbox}
@@ -20,9 +19,9 @@
 %\usepackage{hyperref}
 \usepackage{framed}
 \usepackage{gb4e}
-%\usepackage[scaled]{helvet}
-\renewcommand{\familydefault}{\sfdefault} 
-\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+%\renewcommand{\familydefault}{\sfdefault}
 
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
@@ -95,8 +94,6 @@
 	#1,
 }
 
-
-
 \newcommand\enot[3]{\begin{notn}{#1} #2 \\
 		\begin{center}
 			#3
@@ -130,7 +127,7 @@
 \end{center}
 
 \newpage
-\begin{multicols*}{2}
+%\begin{multicols*}{2}
 
 \part{Analysing Language Use}
 \subfile{content/chapter01}
@@ -154,7 +151,7 @@
 
 \part{Exam Skills}
 \subfile{content/chapter301}
-\end{multicols*}
+%\end{multicols*}
 
 % \vspace{3em}
 % \begin{center}
