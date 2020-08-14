@@ -22,3 +22,12 @@
 * Carefree, flexible, open to innovation
 * Unrealistic
 * Accustomed to speed and efficiency
+
+## Gen Z
+* Self-centred
+* Digital natives
+* Self-deprecating
+* Attempts at collectivism
+* Financial independence, retire early (FIRE)
+* More liberal
+* More diverse/less homogenous
