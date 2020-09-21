@@ -1,4 +1,6 @@
 \documentclass[10pt]{article}
+
+\usepackage[margin=2cm,a4paper]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -20,6 +22,7 @@
 \usepackage[scaled]{helvet}
 \renewcommand{\familydefault}{\sfdefault} 
 \usepackage[T1]{fontenc}
+
 \frenchspacing
 
 \tcbuselibrary{skins}
@@ -123,32 +126,36 @@
 	This document consists of \textbf{26} pages including the cover page.
 \end{center}
 
-\newpage \part{Analysing Language Use}
-\subfile{content/chapter01}
-\newpage \subfile{content/chapter02}
-\newpage \subfile{content/chapter03}
-\newpage \subfile{content/chapter04}
-\newpage \subfile{content/chapter05}
-\newpage \subfile{content/chapter06}
-\newpage \subfile{content/chapter07}
-\newpage \subfile{content/chapter110}
 
-\newpage \part{Language in Society}
-\subfile{content/chapter201}
-\newpage \subfile{content/chapter201a}
-\newpage \subfile{content/chapter202}
-\newpage \subfile{content/chapter203}
-\newpage \subfile{content/chapter204}
-\newpage \subfile{content/chapter206}
-\newpage \subfile{content/chapter207}
-\newpage \subfile{content/chapter208}
-\newpage \subfile{content/chapter209}
-\newpage \subfile{content/chapter210}
-\newpage \subfile{content/chapter211}
-\newpage \subfile{content/chapter212}
-\newpage \subfile{content/chapter213}
+\newpage
 
-\newpage \part{Exam Skills}
-\subfile{content/chapter301}
+\begin{multicols}{2}
+	\part{Analysing Language Use}
+	\subfile{content/chapter01}
+	\subfile{content/chapter02}
+	\subfile{content/chapter03}
+	\subfile{content/chapter04}
+	\subfile{content/chapter05}
+	\subfile{content/chapter06}
+	\subfile{content/chapter07}
+	\subfile{content/chapter110}
 
+	\part{Language in Society}
+	\subfile{content/chapter201}
+	\subfile{content/chapter201a}
+	\subfile{content/chapter202}
+	\subfile{content/chapter203}
+	\subfile{content/chapter204}
+	\subfile{content/chapter206}
+	\subfile{content/chapter207}
+	\subfile{content/chapter208}
+	\subfile{content/chapter209}
+	\subfile{content/chapter210}
+	\subfile{content/chapter211}
+	\subfile{content/chapter212}
+	\subfile{content/chapter213}
+
+	\part{Exam Skills}
+	\subfile{content/chapter301}
+\end{multicols}{2}
 \end{document}
