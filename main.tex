@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[10pt]{book}
 
 \usepackage[margin=2cm,a4paper]{geometry}
 \usepackage{amsmath}
@@ -19,12 +19,15 @@
 \usepackage{tipa}
 \usepackage{framed}
 \usepackage{gb4e}
-\usepackage[scaled]{helvet}
+\usepackage{plex-sans}
 \renewcommand{\familydefault}{\sfdefault} 
 \usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
+\usepackage{titlesec}
 
 \pagestyle{headings}
+
+\renewcommand*{\thepart}{\arabic{part}}
 
 \frenchspacing
 
@@ -43,8 +46,8 @@
 \setcounter{tocdepth}{1}
 
 \title{H2 English Language Linguistics Notes}
-\author{}
-\date{2019}
+\author{Lectured by Mr Joel Poh, Mr Asraf Angullia, Mr Chen Liangcai \\ National Junior College}
+\date{2019--2020}
 
 \newcommand{\undertext}[2]{\(\underbrace{\text{#1}}_{\text{#2}}\)}
 
@@ -73,7 +76,7 @@
 
 \newcommand\exmp[2]{\setcounter{exx}{0} \begin{exampl}{#1} #2 \end{exampl}}
 
-\newtcolorbox[auto counter,number within=subsection]{defn}[2][]{
+\newtcolorbox[auto counter,number within=chapter]{defn}[2][]{
 	sharp corners=all,
 	breakable=false,
 	top = 0.5mm, bottom = 0.5mm,
@@ -86,7 +89,7 @@
 
 \newcommand\edfn[2]{\begin{defn}{#1} #2 \end{defn}}
 
-\newtcolorbox[auto counter,number within=subsection]{notn}[2][]{
+\newtcolorbox[auto counter,number within=chapter]{notn}[2][]{
 	sharp corners=all,
 	breakable=false,
 	top = 0.5mm, bottom = 0.5mm,
@@ -103,63 +106,65 @@
 		\end{center}
 \end{notn}}
 
+\titleformat{\part}[display]{\large\bfseries}{Paper \thepart}{0.5ex}{\Huge}
+
 \begin{document}
+\frontmatter
 
 \maketitle
 
-\begin{abstract}
-	These notes are for the `A'-Level H2 English Language Linguistics syllabus. They might be similar in content to other English linguistics courses too, though structured differently.
-	
-	These notes are written by myself, which means they are prone to typos and errors. If you find errata, do contact me so I can remedy or give you access to the GitHub repository for you to push any changes.
-	
-	Some code (especially the \texttt{tcolorboxes}) are copied from 4yn's a-lv-notes repository\footnote{https://github.com/4yn/a-lv-notes}.
-	
-	Do whatever you want with these notes. Reproduce them, distribute them, use material from them, go crazy. 
-	
-	Use these notes with caution.
-\end{abstract}
+\vspace*{\fill}
+\chapter*{Preface}
+These notes are for the `A'-Level H2 English Language Linguistics syllabus. They might be similar in content to other English linguistics courses too, though structured differently.
 
-\begin{multicols}{2} 
+These notes are written by myself, which means they are prone to typos and errors. If you find errata, do contact me so I can remedy or give you access to the GitHub repository for you to push any changes.
+
+Some code (especially the \texttt{tcolorboxes}) are copied from 4yn's a-lv-notes repository\footnote{https://github.com/4yn/a-lv-notes}.
+
+Do whatever you want with these notes. Reproduce them, distribute them, use material from them, go crazy. 
+
+Use these notes with caution.
+
+\newpage
+\begin{multicols}{2}
 \tableofcontents
 \end{multicols}
 
-\vspace*{\fill}
-\hrule
-\begin{center}
-	This document consists of \textbf{26} pages including the cover page.
-\end{center}
-
-
 \newpage
 
+\mainmatter
+\part{Analysing Language Use}
 \begin{multicols}{2}
-	\part{Analysing Language Use}
-	\subfile{content/chapter01}
-	\subfile{content/chapter02}
-	\subfile{content/chapter03}
-	\subfile{content/chapter04}
-	\subfile{content/chapter05}
-	\subfile{content/chapter06}
-	\subfile{content/chapter07}
-	\subfile{content/chapter110}
+\subfile{content/chapter01}
+\subfile{content/chapter02}
+\subfile{content/chapter03}
+\subfile{content/chapter04}
+\subfile{content/chapter05}
+\subfile{content/chapter06}
+\subfile{content/chapter07}
+\subfile{content/chapter110}
+\end{multicols}
 
-	\part{Language in Society}
-	\subfile{content/chapter201}
-	\subfile{content/chapter201a}
-	\subfile{content/chapter202}
-	\subfile{content/chapter203}
-	\subfile{content/chapter204}
-	\subfile{content/chapter206}
-	\subfile{content/chapter207}
-	\subfile{content/chapter208}
-	\subfile{content/chapter209}
-	\subfile{content/chapter210}
-	\subfile{content/chapter211}
-	\subfile{content/chapter212}
-	\subfile{content/chapter213}
-	\subfile{content/chapter214}
+\part{Language in Society}
+\begin{multicols}{2}
+\subfile{content/chapter201}
+\subfile{content/chapter201a}
+\subfile{content/chapter202}
+\subfile{content/chapter203}
+\subfile{content/chapter204}
+\subfile{content/chapter206}
+\subfile{content/chapter207}
+\subfile{content/chapter208}
+\subfile{content/chapter209}
+\subfile{content/chapter210}
+\subfile{content/chapter211}
+\subfile{content/chapter212}
+\subfile{content/chapter213}
+\subfile{content/chapter214}
+\end{multicols}
 
-	\part{Exam Skills}
-	\subfile{content/chapter301}
+\part*{Exam Skills}
+\begin{multicols}{2}
+\subfile{content/chapter301}
 \end{multicols}
 \end{document}
