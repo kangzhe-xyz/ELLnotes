@@ -4,4 +4,4 @@ These notes were written during my time in National Junior College. They are bas
 
 My teacher Mr Joel Poh actively maintains a repository for (in no way affiliated with this repository) his slides at [his repository here](https://github.com/jwnpoh/ELL-lessons).
 
-You can view the PDF [here](https://https://kangzhe.xyz/pdffiles/ellnotes.pdf).
+You can view the PDF [here](https://kangzhe.xyz/pdffiles/ellnotes.pdf).
