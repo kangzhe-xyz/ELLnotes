@@ -6,3 +6,4 @@ do
 	sed "s/section/chapter/g" $FILE > test.tex 
 	sed "s/subchapter/section/g" test.tex > $FILE
 done
+rm test.tex
